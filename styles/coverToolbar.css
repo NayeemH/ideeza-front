@@ -1,0 +1,560 @@
+.toolbar {
+	--toolbarbackground: #fff;
+	--box-shadow: 11px 10px 32px -11px rgba(0, 0, 0, 0.75);
+	background-color: var(--toolbarbackground);
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	padding: 0 10px;
+	border-radius: 8px;
+	position: absolute;
+	top: 1%;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	opacity: 1;
+	height: auto;
+	z-index: 9;
+	-webkit-box-shadow: var(--box-shadow);
+	box-shadow: var(--box-shadow);
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	color: black;
+}
+
+.toolbar button {
+	text-transform: inherit;
+	padding: 0;
+	background-color: transparent;
+	border: none;
+	color: inherit;
+}
+
+.toolbar button:hover {
+	color: inherit;
+	background-color: inherit;
+}
+
+.toolbar img {
+	max-width: none;
+	display: initial;
+}
+
+.toolbar p {
+	line-height: initial;
+	color: inherit;
+}
+
+.toolbar .group {
+	position: relative;
+}
+
+.toolbar .group .toolbar__tools__expand-container {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.toolbar .group .toolbar__tools__icons-container {
+	display: none;
+	position: absolute;
+	width: -webkit-max-content;
+	width: -moz-max-content;
+	width: max-content;
+	background-color: var(--toolbarbackground);
+	top: 100%;
+	left: 0;
+	border-radius: 4px;
+	margin: 0;
+	padding: 10px 20px;
+}
+
+.toolbar .group .toolbar__tools__icons-container__group__icon-desc {
+	top: calc(100% + 10px);
+}
+
+.toolbar .expand .toolbar__tools__icons-container {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.toolbar__tools {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	min-height: 110px;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+.toolbar__tools .arrow-icon {
+	width: 12px;
+}
+
+.toolbar__tools__expand-container,
+.toolbar__tools__icons-container {
+	border-right: 1px solid gray;
+	margin: 10px 0;
+}
+
+.toolbar__tools:last-child .toolbar__tools__expand-container,
+.toolbar__tools:last-child .toolbar__tools__icons-container {
+	border-right: 0;
+}
+
+.toolbar__tools__expand-container {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	gap: 5px;
+	display: none;
+	padding: 10px;
+}
+
+.toolbar__tools__expand-container__icon {
+	width: 45px;
+	height: 55px;
+}
+
+.toolbar__tools__expand-container__icon img {
+	width: 100%;
+}
+
+.toolbar__tools__expand-container p {
+	text-transform: capitalize;
+}
+
+.toolbar__tools__expand-container:hover {
+	background-color: rgba(128, 128, 128, 0.247);
+}
+
+.toolbar__tools__icons-container {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.toolbar__tools__icons-container__group {
+	position: relative;
+}
+
+.toolbar__tools__icons-container__group .big-icon {
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+
+.toolbar__tools__icons-container__group
+	.big-icon
+	.toolbar__tools__icons-container__group__icon__icon-container,
+.toolbar__tools__icons-container__group
+	.big-icon
+	.toolbar__tools__icons-container__group__icon__arrow-container {
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+
+.toolbar__tools__icons-container__group
+	.big-icon
+	.toolbar__tools__icons-container__group__icon__icon-container {
+	width: 56px;
+	height: auto;
+}
+
+.toolbar__tools__icons-container__group
+	.big-icon
+	.toolbar__tools__icons-container__group__icon__icon-container
+	img {
+	width: 50px;
+}
+
+.toolbar__tools__icons-container__group .semi-icon {
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+
+.toolbar__tools__icons-container__group
+	.semi-icon
+	.toolbar__tools__icons-container__group__icon__icon-container {
+	width: 29px;
+	height: auto;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+
+.toolbar__tools__icons-container__group
+	.semi-icon
+	.toolbar__tools__icons-container__group__icon__icon-container
+	img {
+	width: 23px;
+}
+
+.toolbar__tools__icons-container__group
+	.semi-icon
+	.toolbar__tools__icons-container__group__icon__icon-container
+	p {
+	font-size: 10px;
+	white-space: nowrap;
+}
+
+.toolbar__tools__icons-container__group
+	.semi-icon
+	.toolbar__tools__icons-container__group__icon__arrow-container
+	p {
+	font-size: 10px;
+	white-space: nowrap;
+}
+
+.toolbar__tools__icons-container__group .options,
+.toolbar__tools__icons-container__group .checkbox {
+	border: 1px solid #bed1ef !important;
+}
+
+.toolbar__tools__icons-container__group
+	.options
+	.toolbar__tools__icons-container__group__icon__icon-container,
+.toolbar__tools__icons-container__group
+	.options
+	.toolbar__tools__icons-container__group__icon__arrow-container,
+.toolbar__tools__icons-container__group
+	.checkbox
+	.toolbar__tools__icons-container__group__icon__icon-container,
+.toolbar__tools__icons-container__group
+	.checkbox
+	.toolbar__tools__icons-container__group__icon__arrow-container {
+	background-color: #bed1ef !important;
+}
+
+.toolbar__tools__icons-container__group__icon {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	margin: 3px !important;
+	border: 1px solid transparent !important;
+	width: -webkit-fit-content;
+	width: -moz-fit-content;
+	width: fit-content;
+	border-radius: 4px;
+}
+
+.toolbar__tools__icons-container__group__icon:hover {
+	border: 1px solid #bed1ef !important;
+}
+
+.toolbar__tools__icons-container__group__icon__icon-container,
+.toolbar__tools__icons-container__group__icon__arrow-container {
+	padding: 3px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	gap: 6px;
+	width: 100%;
+	height: 100%;
+}
+
+.toolbar__tools__icons-container__group__icon__icon-container p,
+.toolbar__tools__icons-container__group__icon__arrow-container p {
+	text-transform: capitalize;
+	max-width: 80px;
+}
+
+.toolbar__tools__icons-container__group__icon__icon-container:hover,
+.toolbar__tools__icons-container__group__icon__arrow-container:hover {
+	background-color: #bed1ef;
+}
+
+.toolbar__tools__icons-container__group__icon__icon-container {
+	width: 28px;
+	height: 28px;
+}
+
+.toolbar__tools__icons-container__group__icon__icon-container img {
+	width: 22px;
+}
+
+.toolbar__tools__icons-container__group__icon__options-container {
+	min-width: 200px;
+	background-color: var(--toolbarbackground);
+	position: absolute;
+	top: 100%;
+	left: 0;
+	border-radius: 4px;
+	-webkit-box-shadow: var(--box-shadow);
+	box-shadow: var(--box-shadow);
+	z-index: 1;
+}
+
+.toolbar__tools__icons-container__group__icon__options-container .active {
+	color: #fff;
+	background-color: #08f;
+}
+
+.toolbar__tools__icons-container__group__icon__options-container__option {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	gap: 10px;
+	padding: 5px 20px 5px 8px;
+	position: relative;
+}
+
+.toolbar__tools__icons-container__group__icon__options-container__option:first-child {
+	border-radius: 4px 4px 0 0;
+}
+
+.toolbar__tools__icons-container__group__icon__options-container__option:last-child {
+	border-radius: 0 0 4px 4px;
+}
+
+.toolbar__tools__icons-container__group__icon__options-container__option img {
+	width: 22px;
+}
+
+.toolbar__tools__icons-container__group__icon__options-container__option p {
+	font-size: 14px;
+	text-transform: capitalize;
+	text-align: left;
+	white-space: nowrap;
+}
+
+.toolbar__tools__icons-container__group__icon__options-container__option:hover {
+	color: #fff;
+	background-color: #08f;
+}
+
+.toolbar__tools__icons-container__group__icon__options-container__option__form {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	gap: 10px;
+	position: absolute;
+	top: 105%;
+	left: 5px;
+	background-color: var(--toolbarbackground);
+	border-top: 1px solid gray;
+	border-radius: 4px;
+	-webkit-box-shadow: var(--box-shadow);
+	box-shadow: var(--box-shadow);
+	min-height: 50px;
+	width: 100%;
+	z-index: 1;
+	padding: 10px;
+}
+
+.toolbar__tools__icons-container__group__icon__options-container__option__form__input-container {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+	gap: 10px;
+}
+
+.toolbar__tools__icons-container__group__icon__options-container__option__form__input-container
+	label {
+	text-transform: capitalize;
+	font-weight: 600;
+	color: black !important;
+	min-width: 40px;
+}
+
+.toolbar__tools__icons-container__group__icon__options-container__option__form__input-container
+	input {
+	border: 1px solid gray;
+	border-radius: 4px;
+	width: 100%;
+}
+
+.toolbar__tools__icons-container__group__icon__options-container__option__form button {
+	background-color: #ff00c7;
+	padding: 5px 10px;
+	color: white;
+	border-radius: 4px;
+	text-transform: capitalize;
+	font-size: 13px;
+	width: 50px;
+	margin-left: auto;
+}
+
+.toolbar__tools__icons-container__group__icon__options-container__option__form button:hover {
+	background-color: #ff00c7;
+	opacity: 0.7;
+}
+
+.toolbar__tools__icons-container__group__icon__checkbox-container {
+	min-width: 250px;
+	background-color: var(--toolbarbackground);
+	position: absolute;
+	top: 100%;
+	left: 0;
+	border-radius: 4px;
+	-webkit-box-shadow: var(--box-shadow);
+	box-shadow: var(--box-shadow);
+	z-index: 1;
+}
+
+.toolbar__tools__icons-container__group__icon__checkbox-container__content {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	gap: 10px;
+	padding: 5px 10px;
+	position: relative;
+}
+
+.toolbar__tools__icons-container__group__icon__checkbox-container__content:first-child {
+	border-radius: 4px 4px 0 0;
+	padding-top: 10px;
+}
+
+.toolbar__tools__icons-container__group__icon__checkbox-container__content:last-child {
+	border-radius: 0 0 4px 4px;
+	padding-bottom: 10px;
+}
+
+.toolbar__tools__icons-container__group__icon__checkbox-container__content:hover {
+	background-color: rgba(0, 136, 255, 0.233);
+	cursor: default;
+}
+
+.toolbar__tools__icons-container__group__icon__checkbox-container__content input {
+	cursor: pointer;
+	margin-right: 5px;
+}
+
+.toolbar__tools__icons-container__group__icon__checkbox-container__content p {
+	font-size: 14px;
+	text-transform: capitalize;
+	text-align: left;
+	white-space: nowrap;
+}
+
+.toolbar__tools__icons-container__group__icon__checkbox-container__content__icon-container {
+	margin-left: auto;
+}
+
+.toolbar__tools__icons-container__group__icon__checkbox-container__content__icon-container img {
+	width: 14px;
+	cursor: pointer;
+	margin: 0 5px;
+}
+
+.toolbar__tools__icons-container__group .big-desc {
+	max-width: 500px;
+}
+
+.toolbar__tools__icons-container__group__icon-desc {
+	position: absolute;
+	top: calc(100%);
+	left: 0;
+	width: -webkit-max-content;
+	width: -moz-max-content;
+	width: max-content;
+	min-width: 300px;
+	max-width: 350px;
+	background-color: var(--toolbarbackground);
+	padding: 15px 30px;
+	border-radius: 4px;
+	-webkit-box-shadow: var(--box-shadow);
+	box-shadow: var(--box-shadow);
+}
+
+.toolbar__tools__icons-container__group__icon-desc__title {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	gap: 10px;
+	border-bottom: 1px solid gray;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+
+.toolbar__tools__icons-container__group__icon-desc__title img {
+	width: 50px;
+}
+
+.toolbar__tools__icons-container__group__icon-desc__title p {
+	font-weight: 600;
+	font-size: 15px;
+	text-transform: capitalize;
+}
+
+.toolbar__tools__icons-container__group__icon-desc__content {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	gap: 8px;
+	color: #959595;
+}
+
+.toolbar__tools__icons-container__group__icon-desc__help {
+	margin-top: 10px;
+}
+
+.toolbar__tools__title {
+	background-color: #efefef;
+	color: #8b8b8b !important;
+	font-size: 14px;
+	padding: 5px 8px;
+	width: 90%;
+	border-radius: 8px 8px 0 0;
+	text-align: center;
+	cursor: default;
+	text-transform: capitalize;
+}
+/*# sourceMappingURL=coverToolbar.css.map */

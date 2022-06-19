@@ -1,0 +1,42 @@
+[
+	{
+		"id": "1",
+		"description": "How Ideeza can make the world a better place",
+		"date": "10 jul 2019",
+		"group_Type": "Personal",
+		"type": "Marketing",
+		"userName": "John"
+	},
+	{
+		"id": "2",
+		"description": "How Ideeza can make the world a better place",
+		"date": "10 jul 2019",
+		"group_Type": "Broadcast",
+		"type": "System",
+		"userName": "Michael"
+	},
+	{
+		"id": "3",
+		"description": "How Ideeza can make the world a better place",
+		"date": "10 jul 2019",
+		"group_Type": "Group",
+		"type": "Marketing",
+		"userName": "Rachel"
+	},
+	{
+		"id": "4",
+		"description": "How Ideeza can make the world a better place",
+		"date": "10 jul 2019",
+		"group_Type": "Group",
+		"type": "System",
+		"userName": "John"
+	},
+	{
+		"id": "5",
+		"description": "How Ideeza can make the world a better place",
+		"date": "10 jul 2019",
+		"group_Type": "Broadcast",
+		"type": "System",
+		"userName": "Chris"
+	}
+]

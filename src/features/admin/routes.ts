@@ -1,0 +1,253 @@
+import { NextRouter } from 'next/router';
+
+const routes = (history: NextRouter) => [
+	{
+		name: 'Dashboard',
+		route: ['/admin/dashboard'],
+		icon: '/images/siderbar-icons/dashboard.svg',
+		img: true,
+		click: () => history.push('/admin/dashboard/'),
+	},
+	{
+		name: 'Users',
+		route: [
+			'/admin/users',
+			'/admin/users/contacts',
+			'/admin/users/marketing',
+			'/admin/users/marketing/success-story',
+			'/admin/users/marketing/success-story/preview',
+			'/admin/users/marketing/notification-center',
+			'/admin/users/marketing/team',
+			'/admin/users/marketing/pricing-plans',
+			'/admin/users/marketing/pricing-plans/users',
+			'/admin/users/marketing/pricing-plans/service-providers',
+			'/admin/users/marketing/avatars',
+		],
+		icon: '/images/siderbar-icons/management.svg',
+		img: true,
+		click: () => history.push('/admin/users/'),
+		children: [
+			{
+				name: 'Home',
+				route: ['/admin/users'],
+				icon: '/images/siderbar-icons/square-box.svg',
+				img: true,
+				click: () => history.push('/admin/users'),
+			},
+			{
+				name: 'Contacts',
+				route: ['/admin/users/contacts'],
+				icon: '/images/siderbar-icons/square-box-outline.svg',
+				img: true,
+				click: () => history.push('/admin/users/contacts'),
+			},
+			{
+				name: 'Marketing',
+				route: [
+					'/admin/users/marketing',
+					'/admin/users/marketing/success-story',
+					'/admin/users/marketing/success-story/preview',
+					'/admin/users/marketing/notification-center',
+					'/admin/users/marketing/team',
+					'/admin/users/marketing/pricing-plans',
+					'/admin/users/marketing/pricing-plans/users',
+					'/admin/users/marketing/pricing-plans/service-providers',
+					'/admin/users/marketing/avatars',
+				],
+				icon: '/images/siderbar-icons/square-box-outline.svg',
+				img: true,
+				click: () => history.push('/admin/users/marketing/success-story'),
+				children: [
+					{
+						name: 'Success Story',
+						route: ['/admin/users/marketing/success-story'],
+						icon: '/images/siderbar-icons/square-box-outline.svg',
+						img: true,
+						click: () => history.push('/admin/users/marketing/success-story'),
+					},
+					{
+						name: 'Notification Center',
+						route: ['/admin/users/marketing/notification-center'],
+						icon: '/images/siderbar-icons/square-box-outline.svg',
+						img: true,
+						click: () => history.push('/admin/users/marketing/notification-center'),
+					},
+					{
+						name: 'Team',
+						route: ['/admin/users/marketing/team'],
+						icon: '/images/siderbar-icons/square-box-outline.svg',
+						img: true,
+						click: () => history.push('/admin/users/marketing/team'),
+					},
+					{
+						name: 'Pricing Plans',
+						route: [
+							'/admin/users/marketing/pricing-plans',
+							'/admin/users/marketing/pricing-plans/users',
+							'/admin/users/marketing/pricing-plans/service-providers',
+						],
+						icon: '/images/siderbar-icons/square-box-outline.svg',
+						img: true,
+						click: () => history.push('/admin/users/marketing/pricing-plans/users'),
+						children: [
+							{
+								name: 'Users',
+								route: ['/admin/users/marketing/pricing-plans/users'],
+								icon: '/images/siderbar-icons/management.svg',
+								img: true,
+								click: () =>
+									history.push('/admin/users/marketing/pricing-plans/users'),
+							},
+							{
+								name: 'Service Providers',
+								route: ['/admin/users/marketing/pricing-plans/service-providers'],
+								icon: '/images/siderbar-icons/management.svg',
+								img: true,
+								click: () =>
+									history.push(
+										'/admin/users/marketing/pricing-plans/service-providers'
+									),
+							},
+						],
+					},
+					{
+						name: 'Avatars',
+						route: ['/admin/users/marketing/avatars'],
+						icon: '/images/siderbar-icons/square-box-outline.svg',
+						img: true,
+						click: () => history.push('/admin/users/marketing/avatars'),
+					},
+				],
+			},
+		],
+	},
+	{
+		name: 'Orders',
+		route: ['/admin/orders'],
+		icon: '/images/siderbar-icons/management.svg',
+		img: true,
+		click: () => history.push('/admin/orders/'),
+	},
+	{
+		name: 'Service providers',
+		route: ['/admin/service-providers'],
+		icon: '/images/siderbar-icons/management.svg',
+		img: true,
+		click: () => history.push('/admin/service-providers/'),
+	},
+	{
+		name: 'Blog',
+		route: ['/admin/blog', '/admin/blog/add-article', '/admin/blog/preview'],
+		icon: '/images/siderbar-icons/book-outline.svg',
+		img: true,
+		click: () => history.push('/admin/blog'),
+	},
+	{
+		name: 'Investors',
+		route: [
+			'/admin/investors',
+			'/admin/investors/activities',
+			'/admin/investors/blog',
+			'/admin/investors/blog-preview',
+			'/admin/investors/add-blog',
+			'/admin/investors/contacts',
+			'/admin/investors/deals',
+			'/admin/investors/documents',
+			'/admin/investors/inbox',
+			'/admin/investors/news',
+			'/admin/investors/news-preview',
+			'/admin/investors/add-news',
+		],
+		icon: '/images/siderbar-icons/book-outline.svg',
+		img: true,
+		click: () => history.push('/admin/investors'),
+		children: [
+			{
+				name: 'Home',
+				route: ['/admin/investors'],
+				icon: '/images/siderbar-icons/square-box-outline.svg',
+				img: true,
+				click: () => history.push('/admin/investors'),
+			},
+			{
+				name: 'Activities',
+				route: ['/admin/investors/activities'],
+				icon: '/images/siderbar-icons/square-box-outline.svg',
+				img: true,
+				click: () => history.push('/admin/investors/activities'),
+			},
+
+			{
+				name: 'Contacts',
+				route: ['/admin/investors/contacts'],
+				icon: '/images/siderbar-icons/square-box-outline.svg',
+				img: true,
+				click: () => history.push('/admin/investors/contacts'),
+			},
+			{
+				name: 'Deals',
+				route: ['/admin/investors/deals'],
+				icon: '/images/siderbar-icons/square-box-outline.svg',
+				img: true,
+				click: () => history.push('/admin/investors/deals'),
+			},
+			{
+				name: 'Documents',
+				route: ['/admin/investors/documents'],
+				icon: '/images/siderbar-icons/square-box-outline.svg',
+				img: true,
+				click: () => history.push('/admin/investors/documents'),
+			},
+			{
+				name: 'Inbox',
+				route: ['/admin/investors/inbox'],
+				icon: '/images/siderbar-icons/square-box-outline.svg',
+				img: true,
+				click: () => history.push('/admin/investors/inbox'),
+			},
+			{
+				name: 'Blog',
+				route: ['/admin/investors/blog'],
+				icon: '/images/siderbar-icons/square-box-outline.svg',
+				img: true,
+				click: () => history.push('/admin/investors/blog'),
+			},
+			{
+				name: 'News',
+				route: [
+					'/admin/investors/news',
+					'/admin/investors/add-news',
+					'/admin/investors/news-preview',
+				],
+				icon: '/images/siderbar-icons/news.svg',
+				img: true,
+				click: () => history.push('/admin/investors/news'),
+			},
+		],
+	},
+
+	{
+		name: 'Messages',
+		route: ['/admin/messages'],
+		icon: '/images/siderbar-icons/message.svg',
+		img: true,
+		click: () => history.push('/admin/messages'),
+	},
+
+	{
+		name: 'My Notes',
+		route: ['/admin/my-notes'],
+		icon: '/images/siderbar-icons/list.svg',
+		img: true,
+		click: () => history.push('/admin/my-notes'),
+	},
+	{
+		name: 'Products',
+		route: ['/admin/product'],
+		icon: '/images/siderbar-icons/project.svg',
+		img: true,
+		click: () => history.push('/admin/product'),
+	},
+];
+
+export { routes };

@@ -1,0 +1,36 @@
+image: docker:latest
+services:
+    - docker:dind
+
+before_script:
+    - echo $GCP_SA_KEY > ${HOME}/gcloud-service-key.json
+    - docker login -u _json_key --password-stdin https://gcr.io < ${HOME}/gcloud-service-key.json
+
+variables:
+    DOCKER_DRIVER: overlay
+
+stages:
+    - build
+    - deploy
+
+docker-build:
+    stage: build
+    script:
+        - docker build -f Dockerfile2 -t gcr.io/ideeza-kumar/frontend-dev:$CI_COMMIT_SHA .
+        - docker push gcr.io/ideeza-kumar/frontend-dev:$CI_COMMIT_SHA
+    only:
+        - dev
+
+k8s-deploy-prod:
+    image: google/cloud-sdk
+    stage: deploy
+    script:
+        - echo "$GCP_SA_KEY" > key.json
+        - gcloud auth activate-service-account --key-file key.json
+        - gcloud config set project ideeza-kumar
+        - gcloud config set compute/zone us-central1-c
+        - gcloud config set container/use_client_certificate False
+        - gcloud container clusters get-credentials test
+        - kubectl set image deployment/frontend-dev frontend-dev=gcr.io/ideeza-kumar/frontend-dev:$CI_COMMIT_SHA --namespace=default
+    only:
+        - dev

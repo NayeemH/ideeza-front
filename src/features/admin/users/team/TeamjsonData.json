@@ -1,0 +1,30 @@
+[
+	{
+		"id": "1",
+		"is_visible": true,
+		"name": "Leona Broxah",
+		"position": "Web Developer",
+		"type": "Regular"
+	},
+	{
+		"id": "2",
+		"is_visible": true,
+		"name": "Tobias Fate",
+		"position": "Web Designer",
+		"type": "Executives"
+	},
+	{
+		"id": "3",
+		"is_visible": true,
+		"name": "Tania Lushenko",
+		"position": "Lawyer",
+		"type": "Executives"
+	},
+	{
+		"id": "4",
+		"is_visible": true,
+		"name": "John Wick",
+		"position": "Web Designer",
+		"type": "Regular"
+	}
+]

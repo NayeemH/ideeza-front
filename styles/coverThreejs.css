@@ -1,0 +1,831 @@
+@charset "UTF-8";
+.threejs {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	margin: 0;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: #f1f1f1;
+	/* btn */
+	/* btn */
+	/* btn */
+	/* btn */
+	/* osx */
+	/* Listbox */
+	/* CodeMirror */
+	/* outliner */
+	/* */
+	/* */
+	/* */
+	/* */
+	/*  */
+	/* UI */
+	/* */
+	/* @media all and (max-width: 600px) {
+        #resizer {
+          display: none;
+        }
+      
+        #menubar .menu .options {
+          max-height: calc(100% - 372px);
+        }
+      
+        #menubar .menu.right {
+          display: none;
+        }
+      
+        #viewport {
+          left: 0;
+          right: 0;
+          top: 32px;
+          height: calc(100% - 352px);
+        }
+      
+        #script {
+          left: 0;
+          right: 0;
+          top: 32px;
+          height: calc(100% - 352px);
+        }
+      
+        #player {
+          left: 0;
+          right: 0;
+          top: 32px;
+          height: calc(100% - 352px);
+        }
+      
+        #sidebar {
+          left: 0;
+          width: 100%;
+          top: calc(100% - 320px);
+          bottom: 0;
+        }
+      } */
+	/* DARK MODE */
+}
+
+.threejs :root {
+	color-scheme: light dark;
+}
+
+.threejs hr {
+	border: 0;
+	border-top: 1px solid #ccc;
+}
+
+.threejs button {
+	position: relative;
+}
+
+.threejs input,
+.threejs select {
+	vertical-align: middle;
+	font-size: 14px !important;
+}
+
+.threejs input[type='color']::-webkit-color-swatch-wrapper {
+	padding: 0;
+}
+
+.threejs input[type='color']::-webkit-color-swatch {
+	border: none;
+}
+
+.threejs canvas {
+	display: initial !important;
+}
+
+.threejs textarea {
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+	white-space: pre;
+	word-wrap: normal;
+	vertical-align: middle;
+}
+
+.threejs .show-menu {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	z-index: 1;
+}
+
+.threejs .lower-show-menubtn {
+	top: 37px !important;
+	-webkit-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+
+.threejs .show-toolbar {
+	position: absolute;
+	z-index: 8;
+	cursor: pointer;
+}
+
+.threejs .hide-toolbar {
+	/* transform: translate(-50%, -150%) !important; */
+	height: 0 !important;
+	opacity: 0 !important;
+	pointer-events: none !important;
+}
+
+.threejs .lower-toolbar {
+	padding-top: 32px !important;
+	/* border-radius: 0 0 8px 8px !important; */
+}
+
+.threejs .hide-menubar {
+	display: none;
+}
+
+.threejs .show-sidebar {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	cursor: pointer;
+	z-index: 100;
+}
+
+.threejs .hide-sidebar {
+	width: 0 !important;
+}
+
+.threejs .hide-resizer {
+	right: -20px !important;
+}
+
+.threejs .show-fullscreen {
+	position: absolute;
+	bottom: 1%;
+	right: calc(5% + 5px);
+	z-index: 7;
+	cursor: pointer;
+}
+
+.threejs .storage-popup {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.438);
+	z-index: 8;
+}
+
+.threejs .storage-popup__popup {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	width: 200px;
+	max-width: 300px;
+	margin: 10px;
+	padding: 10px;
+	background-color: white;
+	border-radius: 4px;
+}
+
+.threejs .storage-popup__popup p {
+	text-align: center;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.threejs .storage-popup__popup__buttons {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	gap: 10px;
+	margin-top: 30px;
+}
+
+.threejs .storage-popup__popup__buttons button {
+	padding: 3px 10px;
+	border: 1px solid black;
+	font-size: 14px;
+	text-transform: capitalize;
+	background-color: white;
+	border-radius: 4px;
+}
+
+.threejs .storage-popup__popup__buttons button:hover {
+	opacity: 0.7;
+}
+
+.threejs .storage-popup__popup__buttons button:first-child {
+	color: white;
+	background-color: #ff09d0;
+	border: 1px solid #ff09d0;
+}
+
+.threejs textarea.success {
+	border-color: #8b8 !important;
+}
+
+.threejs textarea.fail {
+	border-color: #f00 !important;
+	background-color: rgba(255, 0, 0, 0.05);
+}
+
+.threejs textarea,
+.threejs input {
+	outline: none;
+}
+
+.threejs .Panel {
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	/* No support for these yet */
+	-o-user-select: none;
+	user-select: none;
+}
+
+.threejs .TabbedPanel {
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	/* No support for these yet */
+	-o-user-select: none;
+	user-select: none;
+	position: relative;
+	display: block;
+	width: 100%;
+}
+
+.threejs .TabbedPanel .Tabs {
+	position: relative;
+	display: block;
+	width: 100%;
+	min-width: 300px;
+}
+
+.threejs .TabbedPanel .Tabs .Tab {
+	padding: 10px;
+	text-transform: uppercase;
+}
+
+.threejs .TabbedPanel .Panels {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 100%;
+	min-width: 300px;
+}
+
+.threejs .Listbox {
+	color: #444;
+	background-color: #fff;
+	padding: 0;
+	width: 100%;
+	min-height: 140px;
+	font-size: 12px;
+	cursor: default;
+	overflow: auto;
+}
+
+.threejs .Listbox .ListboxItem {
+	padding: 6px;
+	color: #666;
+	white-space: nowrap;
+}
+
+.threejs .Listbox .ListboxItem.active {
+	background-color: rgba(0, 0, 0, 0.04);
+}
+
+.threejs .CodeMirror {
+	position: absolute !important;
+	top: 37px;
+	width: 100% !important;
+	height: calc(100% - 37px) !important;
+}
+
+.threejs .CodeMirror .errorLine {
+	background: rgba(255, 0, 0, 0.25);
+}
+
+.threejs .CodeMirror .esprima-error {
+	color: #f00;
+	text-align: right;
+	padding: 0 20px;
+}
+
+.threejs #outliner .opener {
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	margin: 0px 4px;
+	vertical-align: top;
+	text-align: center;
+}
+
+.threejs #outliner .opener.open:after {
+	content: '−';
+}
+
+.threejs #outliner .opener.closed:after {
+	content: '+';
+}
+
+.threejs #outliner .option {
+	border: 1px solid transparent;
+}
+
+.threejs #outliner .option.drag {
+	border: 1px dashed #999;
+}
+
+.threejs #outliner .option.dragTop {
+	border-top: 1px dashed #999;
+}
+
+.threejs #outliner .option.dragBottom {
+	border-bottom: 1px dashed #999;
+}
+
+.threejs #outliner .type {
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	color: #ddd;
+	text-align: center;
+}
+
+.threejs #outliner .type:after {
+	content: '●';
+}
+
+.threejs #outliner .Scene {
+	color: #8888dd;
+}
+
+.threejs #outliner .Camera {
+	color: #dd8888;
+}
+
+.threejs #outliner .Light {
+	color: #dddd88;
+}
+
+.threejs #outliner .Object3D {
+	color: #aaaaee;
+}
+
+.threejs #outliner .Mesh {
+	color: #8888ee;
+}
+
+.threejs #outliner .Line {
+	color: #88ee88;
+}
+
+.threejs #outliner .LineSegments {
+	color: #88ee88;
+}
+
+.threejs #outliner .Points {
+	color: #ee8888;
+}
+
+.threejs #outliner .Geometry {
+	color: #aaeeaa;
+}
+
+.threejs #outliner .Material {
+	color: #eeaaee;
+}
+
+.threejs #outliner .Script:after {
+	content: '◎';
+}
+
+.threejs button {
+	color: #555;
+	background-color: #ddd;
+	border: 0px;
+	margin: 0px;
+	/* GNOME Web */
+	padding: 5px 8px;
+	text-transform: uppercase;
+	cursor: pointer;
+	outline: none;
+}
+
+.threejs button:hover {
+	background-color: #fff;
+}
+
+.threejs button.selected {
+	background-color: #fff;
+}
+
+.threejs input,
+.threejs textarea {
+	border: 1px solid transparent;
+	color: #444;
+}
+
+.threejs input.Number {
+	color: #08f !important;
+	font-size: 12px;
+	border: 0px;
+	padding: 2px;
+}
+
+.threejs select {
+	color: #666;
+	background-color: #ddd;
+	border: 0px;
+	text-transform: uppercase;
+	cursor: pointer;
+	outline: none;
+}
+
+.threejs select:hover {
+	background-color: #fff;
+}
+
+.threejs #resizer {
+	position: absolute;
+	top: 32px;
+	right: 295px;
+	width: 5px;
+	bottom: 0px;
+	/* background-color: rgba(255,0,0,0.5); */
+	cursor: col-resize;
+}
+
+.threejs #viewport {
+	position: absolute;
+	width: 95%;
+	height: 100%;
+}
+
+.threejs #viewport #info {
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.25);
+	pointer-events: none;
+}
+
+.threejs .viewport-hidebox {
+	/* display: none; */
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: calc(100vw * 0.05);
+	height: 110%;
+	background-color: #f1f1f1;
+}
+
+.threejs #script {
+	position: absolute;
+	top: 32px;
+	left: 0;
+	right: 300px;
+	bottom: 0;
+	opacity: 0.9;
+}
+
+.threejs #player {
+	position: absolute;
+	width: 95%;
+	height: 100%;
+}
+
+.threejs #menubar {
+	position: absolute;
+	width: 100%;
+	height: 32px;
+	top: 0;
+	left: 0;
+	/* background: #eee; */
+	background: #ffffff;
+	z-index: 11;
+	border-radius: 8px 8px 0 0;
+}
+
+.threejs #menubar .menu {
+	float: left;
+	cursor: pointer;
+	padding-right: 8px;
+}
+
+.threejs #menubar .menu.right {
+	float: right;
+	cursor: auto;
+	padding-right: 0;
+	text-align: right;
+}
+
+.threejs #menubar .menu .title {
+	display: inline-block;
+	color: #888;
+	margin: 0;
+	padding: 8px;
+	line-height: 16px;
+}
+
+.threejs #menubar .menu .options {
+	position: fixed;
+	display: none;
+	padding: 5px 0;
+	background: #fff;
+	width: 150px;
+	max-height: 500px;
+	overflow: auto;
+	box-shadow: 11px 10px 32px -11px rgba(0, 0, 0, 0.75);
+	-webkit-box-shadow: 11px 10px 32px -11px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 11px 10px 32px -11px rgba(0, 0, 0, 0.75);
+	scrollbar-width: thin;
+}
+
+.threejs #menubar .menu .options::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+}
+
+.threejs #menubar .menu:hover .options {
+	display: block;
+}
+
+.threejs #menubar .menu .options hr {
+	border-color: #ddd;
+}
+
+.threejs #menubar .menu .options .option {
+	color: #666;
+	background-color: transparent;
+	padding: 5px 10px;
+	margin: 0 !important;
+}
+
+.threejs #menubar .menu .options .option:hover {
+	color: #fff;
+	background-color: #08f;
+}
+
+.threejs #menubar .menu .options .option:active {
+	color: #666;
+	background: transparent;
+}
+
+.threejs #menubar .menu .options .inactive {
+	color: #bbb;
+	background-color: transparent;
+	padding: 5px 10px;
+	margin: 0 !important;
+}
+
+.threejs #resizer {
+	z-index: 13;
+}
+
+.threejs #sidebar {
+	position: absolute;
+	right: 0;
+	top: 2px;
+	/* top: calc(32px + 150px); */
+	bottom: 0;
+	width: 300px;
+	background: #eee;
+	overflow: auto;
+	z-index: 12;
+}
+
+.threejs #sidebar .Panel {
+	color: #888;
+	padding: 10px;
+	border-top: 1px solid #ccc;
+}
+
+.threejs #sidebar .Panel.collapsed {
+	margin-bottom: 0;
+}
+
+.threejs #sidebar .Row {
+	min-height: 20px;
+	margin-bottom: 10px;
+}
+
+.threejs #sidebar canvas {
+	vertical-align: middle;
+}
+
+.threejs #tabs {
+	background-color: #ddd;
+	border-top: 1px solid #ccc;
+}
+
+.threejs #tabs span {
+	color: #aaa;
+	border-right: 1px solid #ccc;
+	padding: 10px;
+}
+
+.threejs #tabs span.selected {
+	color: #888;
+	background-color: #eee;
+}
+
+.threejs #toolbar {
+	position: absolute;
+	margin: 10px;
+	top: 12%;
+	width: 32px;
+	background: #eee;
+	text-align: center;
+}
+
+.threejs #toolbar button,
+.threejs #toolbar input {
+	height: 32px;
+}
+
+.threejs #toolbar button img {
+	width: 16px;
+	opacity: 0.5;
+}
+
+.threejs .Outliner {
+	color: #444;
+	background-color: #fff;
+	padding: 0;
+	width: 100%;
+	height: 140px;
+	font-size: 12px;
+	cursor: default;
+	overflow: auto;
+	resize: vertical;
+	outline: none !important;
+}
+
+.threejs .Outliner .option {
+	padding: 4px;
+	color: #666;
+	white-space: nowrap;
+}
+
+.threejs .Outliner .option:hover {
+	background-color: rgba(0, 0, 0, 0.02);
+}
+
+.threejs .Outliner .option.active {
+	background-color: rgba(0, 0, 0, 0.04);
+}
+
+.threejs .TabbedPanel .Tabs {
+	background-color: #ddd;
+	border-top: 1px solid #ccc;
+}
+
+.threejs .TabbedPanel .Tab {
+	color: #aaa;
+	border-right: 1px solid #ccc;
+}
+
+.threejs .TabbedPanel .Tab.selected {
+	color: #888;
+	background-color: #eee;
+}
+
+.threejs .Listbox {
+	color: #444;
+	background-color: #fff;
+}
+
+.threejs .Panel {
+	color: #888;
+}
+
+@media (prefers-color-scheme: darkk) {
+	.threejs {
+		/* UI */
+	}
+	.threejs button {
+		color: #aaa;
+		background-color: #222;
+	}
+	.threejs button:hover {
+		color: #ccc;
+		background-color: #444;
+	}
+	.threejs button.selected {
+		color: #fff;
+		background-color: #08f;
+	}
+	.threejs input,
+	.threejs textarea {
+		background-color: #222;
+		border: 1px solid transparent;
+		color: #888;
+	}
+	.threejs select {
+		color: #aaa;
+		background-color: #222;
+	}
+	.threejs select:hover {
+		color: #ccc;
+		background-color: #444;
+	}
+	.threejs #menubar {
+		background: #111;
+	}
+	.threejs #menubar .menu .options {
+		background: #111;
+	}
+	.threejs #menubar .menu .options hr {
+		border-color: #222;
+	}
+	.threejs #menubar .menu .options .option {
+		color: #888;
+	}
+	.threejs #menubar .menu .options .inactive {
+		color: #444;
+	}
+	.threejs #sidebar {
+		background-color: #111;
+	}
+	.threejs #sidebar .Panel {
+		border-top: 1px solid #222;
+	}
+	.threejs #sidebar .Panel.Material canvas {
+		border: solid 1px #5a5a5a;
+	}
+	.threejs #tabs {
+		background-color: #1b1b1b;
+		border-top: 1px solid #222;
+	}
+	.threejs #tabs span {
+		color: #555;
+		border-right: 1px solid #222;
+	}
+	.threejs #tabs span.selected {
+		background-color: #111;
+	}
+	.threejs #toolbar {
+		background-color: #111;
+	}
+	.threejs #toolbar img {
+		-webkit-filter: invert(1);
+		filter: invert(1);
+	}
+	.threejs .Outliner {
+		color: #888;
+		background: #222;
+	}
+	.threejs .Outliner .option:hover {
+		background-color: rgba(21, 60, 94, 0.5);
+	}
+	.threejs .Outliner .option.active {
+		background-color: #153c5e;
+	}
+	.threejs .TabbedPanel .Tabs {
+		background-color: #1b1b1b;
+		border-top: 1px solid #222;
+	}
+	.threejs .TabbedPanel .Tab {
+		color: #555;
+		border-right: 1px solid #222;
+	}
+	.threejs .TabbedPanel .Tab.selected {
+		color: #888;
+		background-color: #111;
+	}
+	.threejs .Listbox {
+		color: #888;
+		background: #222;
+	}
+	.threejs .Listbox .ListboxItem:hover {
+		background-color: rgba(21, 60, 94, 0.5);
+	}
+	.threejs .Listbox .ListboxItem.active {
+		background-color: #153c5e;
+	}
+}
+
+.hide-info #info,
+.hide-info #viewHelper {
+	display: none;
+}
+
+.hide-info #viewport {
+	width: 100%;
+}
+
+.fixed-canvas canvas {
+	width: 1920px !important;
+	height: 1080px !important;
+	min-width: 1920px !important;
+	max-width: 1080px !important;
+}
+/*# sourceMappingURL=coverThreejs.css.map */

@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="145.98" height="114.588" viewBox="0 0 145.98 114.588">
+  <defs>
+    <filter id="Polygon_3" x="43.485" y="0" width="72.835" height="84.212" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feFlood flood-opacity="0.722"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="M" x="0" y="45.733" width="35.051" height="36.599" filterUnits="userSpaceOnUse">
+      <feOffset dx="1" dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.5" result="blur-2"/>
+      <feFlood flood-color="#fff" flood-opacity="0.478"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Y" x="20.055" y="63.421" width="26.919" height="33.738" filterUnits="userSpaceOnUse">
+      <feOffset dx="1" dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.5" result="blur-3"/>
+      <feFlood flood-color="#fff" flood-opacity="0.478"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="I" x="39" y="82.899" width="17" height="30" filterUnits="userSpaceOnUse">
+      <feOffset dx="1" dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.5" result="blur-4"/>
+      <feFlood flood-color="#fff" flood-opacity="0.478"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="D" x="50.966" y="84.243" width="23.468" height="30.345" filterUnits="userSpaceOnUse">
+      <feOffset dx="1" dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.5" result="blur-5"/>
+      <feFlood flood-color="#fff" flood-opacity="0.478"/>
+      <feComposite operator="in" in2="blur-5"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="E" x="70.228" y="79.397" width="25.822" height="33.364" filterUnits="userSpaceOnUse">
+      <feOffset dx="1" dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.5" result="blur-6"/>
+      <feFlood flood-color="#fff" flood-opacity="0.478"/>
+      <feComposite operator="in" in2="blur-6"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="E-2" x="84.172" y="68.055" width="29.514" height="34.321" filterUnits="userSpaceOnUse">
+      <feOffset dx="1" dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.5" result="blur-7"/>
+      <feFlood flood-color="#fff" flood-opacity="0.478"/>
+      <feComposite operator="in" in2="blur-7"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Z" x="100.924" y="59.445" width="29.763" height="33.869" filterUnits="userSpaceOnUse">
+      <feOffset dx="1" dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.5" result="blur-8"/>
+      <feFlood flood-color="#fff" flood-opacity="0.478"/>
+      <feComposite operator="in" in2="blur-8"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="A" x="114.617" y="49.961" width="31.363" height="34.331" filterUnits="userSpaceOnUse">
+      <feOffset dx="1" dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.5" result="blur-9"/>
+      <feFlood flood-color="#fff" flood-opacity="0.478"/>
+      <feComposite operator="in" in2="blur-9"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_5295" data-name="Group 5295" transform="translate(-882.5 -630.998)">
+    <g id="Group_545" data-name="Group 545" transform="translate(908 631.853)">
+      <path id="Path_173" data-name="Path 173" d="M-920.177-2893.8c1.535-14.835,3.581-27.114,50.646-29.672s50.647,32.742,50.647,35.811,1.023,13.813-20.975,23.533-25.068,18.417-25.068,18.417-25.579,17.905-38.369-11.255S-921.711-2878.966-920.177-2893.8Z" transform="translate(920.423 2923.606)" fill="#712b8e"/>
+      <g transform="matrix(1, 0, 0, 1, -25.5, -0.85)" filter="url(#Polygon_3)">
+        <path id="Polygon_3-2" data-name="Polygon 3" d="M24.571,4.006a3,3,0,0,1,5.07,0L51.3,38.23a3,3,0,0,1-2.535,4.6H5.449a3,3,0,0,1-2.535-4.6Z" transform="translate(101.32 10) rotate(90)" fill="#fff"/>
+      </g>
+    </g>
+    <text id="GO" transform="translate(946 674)" fill="#712b8e" font-size="15" font-family="ProximaNova-Semibold, Proxima Nova" font-weight="600"><tspan x="0" y="0">GO</tspan></text>
+    <g transform="matrix(1, 0, 0, 1, 882.5, 631)" filter="url(#M)">
+      <text id="M-2" data-name="M" transform="matrix(0.81, 0.59, -0.59, 0.81, 12.7, 68.29)" fill="#712b8e" font-size="21" font-family="LucidaHandwriting-Italic, Lucida Handwriting" font-style="italic"><tspan x="-9.833" y="0">M</tspan></text>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 882.5, 631)" filter="url(#Y)">
+      <text id="Y-2" data-name="Y" transform="translate(29.45 85.11) rotate(19)" fill="#712b8e" font-size="21" font-family="LucidaHandwriting-Italic, Lucida Handwriting" font-style="italic"><tspan x="-6.132" y="0">Y</tspan></text>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 882.5, 631)" filter="url(#I)">
+      <text id="I-2" data-name="I" transform="translate(45.5 103.4)" fill="#712b8e" font-size="21" font-family="LucidaHandwriting-Italic, Lucida Handwriting" font-style="italic"><tspan x="-5.727" y="0">I</tspan></text>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 882.5, 631)" filter="url(#D)">
+      <text id="D-2" data-name="D" transform="translate(61.59 104.91) rotate(1)" fill="#712b8e" font-size="21" font-family="LucidaHandwriting-Italic, Lucida Handwriting" font-style="italic"><tspan x="-9.09" y="0">D</tspan></text>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 882.5, 631)" filter="url(#E)">
+      <text id="E-3" data-name="E" transform="translate(82.97 101.6) rotate(-16)" fill="#712b8e" font-size="21" font-family="LucidaHandwriting-Italic, Lucida Handwriting" font-style="italic"><tspan x="-6.511" y="0">E</tspan></text>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 882.5, 631)" filter="url(#E-2)">
+      <text id="E-4" data-name="E" transform="matrix(0.89, -0.45, 0.45, 0.89, 99.99, 90.46)" fill="#712b8e" font-size="21" font-family="LucidaHandwriting-Italic, Lucida Handwriting" font-style="italic"><tspan x="-6.511" y="0">E</tspan></text>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 882.5, 631)" filter="url(#Z)">
+      <text id="Z-2" data-name="Z" transform="translate(117.72 81.21) rotate(-31)" fill="#712b8e" font-size="21" font-family="LucidaHandwriting-Italic, Lucida Handwriting" font-style="italic"><tspan x="-6.732" y="0">Z</tspan></text>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 882.5, 631)" filter="url(#A)">
+      <text id="A-2" data-name="A" transform="matrix(0.83, -0.56, 0.56, 0.83, 132.93, 71.52)" fill="#712b8e" font-size="21" font-family="LucidaHandwriting-Italic, Lucida Handwriting" font-style="italic"><tspan x="-7.998" y="0">A</tspan></text>
+    </g>
+  </g>
+</svg>

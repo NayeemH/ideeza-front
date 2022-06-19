@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="15.946" height="17.584" viewBox="0 0 15.946 17.584">
+  <g id="Group_5244" data-name="Group 5244" transform="translate(-1808.904 -211.849)">
+    <g id="Group_4372" data-name="Group 4372" transform="translate(-33.728 -20.697)">
+      <g id="calendar" transform="translate(1843.231 233.146)">
+        <path id="Path_16646" data-name="Path 16646" d="M16.107,4.5H4.638A1.638,1.638,0,0,0,3,6.138V17.607a1.638,1.638,0,0,0,1.638,1.638H16.107a1.638,1.638,0,0,0,1.638-1.638V6.138A1.638,1.638,0,0,0,16.107,4.5Z" transform="translate(-3 -2.862)" fill="none" stroke="#ff00c7" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+        <path id="Path_16647" data-name="Path 16647" d="M16,2.5V5.777" transform="translate(-5.35 -2.5)" fill="none" stroke="#ff00c7" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+        <path id="Path_16648" data-name="Path 16648" d="M8,2.5V5.777" transform="translate(-3.904 -2.5)" fill="none" stroke="#ff00c7" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+        <path id="Path_16649" data-name="Path 16649" d="M3,10.5H17.746" transform="translate(-3 -3.946)" fill="none" stroke="#ff00c7" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+      </g>
+      <g id="Group_4371" data-name="Group 4371" transform="translate(1846.076 242.093)">
+        <g id="Ellipse_74" data-name="Ellipse 74" fill="#fff" stroke="#ff00c7" stroke-width="1">
+          <circle cx="0.755" cy="0.755" r="0.755" stroke="none"/>
+          <circle cx="0.755" cy="0.755" r="0.255" fill="none"/>
+        </g>
+        <g id="Ellipse_79" data-name="Ellipse 79" transform="translate(0 3.019)" fill="#fff" stroke="#ff00c7" stroke-width="1">
+          <circle cx="0.755" cy="0.755" r="0.755" stroke="none"/>
+          <circle cx="0.755" cy="0.755" r="0.255" fill="none"/>
+        </g>
+        <g id="Ellipse_75" data-name="Ellipse 75" transform="translate(3.774)" fill="#fff" stroke="#ff00c7" stroke-width="1">
+          <circle cx="0.755" cy="0.755" r="0.755" stroke="none"/>
+          <circle cx="0.755" cy="0.755" r="0.255" fill="none"/>
+        </g>
+        <g id="Ellipse_78" data-name="Ellipse 78" transform="translate(3.774 3.019)" fill="#fff" stroke="#ff00c7" stroke-width="1">
+          <circle cx="0.755" cy="0.755" r="0.755" stroke="none"/>
+          <circle cx="0.755" cy="0.755" r="0.255" fill="none"/>
+        </g>
+        <g id="Ellipse_76" data-name="Ellipse 76" transform="translate(7.548)" fill="#fff" stroke="#ff00c7" stroke-width="1">
+          <circle cx="0.755" cy="0.755" r="0.755" stroke="none"/>
+          <circle cx="0.755" cy="0.755" r="0.255" fill="none"/>
+        </g>
+        <g id="Ellipse_77" data-name="Ellipse 77" transform="translate(7.548 3.019)" fill="#fff" stroke="#ff00c7" stroke-width="1">
+          <circle cx="0.755" cy="0.755" r="0.755" stroke="none"/>
+          <circle cx="0.755" cy="0.755" r="0.255" fill="none"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

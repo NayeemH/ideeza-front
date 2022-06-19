@@ -1,0 +1,41 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="147.06666564941406" height="60" viewBox="0 0 147.06666564941406 60">
+  <style>
+    .blocklyPathLight {
+      fill: #ff25c7;
+    }
+
+    .blocklyText {
+      fill: #fff;
+    }
+
+    .blocklyEditableText &gt;
+
+    rect {
+      fill: #fff;
+      fill-opacity: .6;
+      stroke: none;
+    }
+
+    .blocklyDropdownText {
+      fill: #000;
+    }
+  </style>
+  <path class="blocklyPathDark" transform="translate(1,1)" fill="#cc1e9f" d=" m 0,0  m 0,8 a 8 8 0 0,1 8,-8  h 138.06666946411133  v 5  H 146.06666946411133  V 5  H 146.06666946411133  c 0,10  -8,-8  -8,7.5  s 8,-2.5  8,7.5  v 1  H 146.06666946411133  V 25  H 66.33333396911621  l -6,4  -3,0  -6,-4  h -7 a 8 8 0 0,0 -8,8  v 8 a 8 8 0 0,0 8,8  H 146.06666946411133  H 146.06666946411133  V 49  V 59  h -138.06666946411133 a 8 8 0 0,1 -8,-8 z
+"></path>
+  <path class="blocklyPath" stroke="none" fill="#ff25c7" d=" m 0,0  m 0,8 a 8 8 0 0,1 8,-8  h 138.06666946411133  v 5  H 146.06666946411133  V 5  H 146.06666946411133  c 0,10  -8,-8  -8,7.5  s 8,-2.5  8,7.5  v 1  H 146.06666946411133  V 25  H 66.33333396911621  l -6,4  -3,0  -6,-4  h -7 a 8 8 0 0,0 -8,8  v 8 a 8 8 0 0,0 8,8  H 146.06666946411133  H 146.06666946411133  V 49  V 59  h -138.06666946411133 a 8 8 0 0,1 -8,-8 z
+"></path>
+  <path class="blocklyPathLight" stroke="#ff66d8" d=" m 0,0  m 0.5,8 a 7.5 7.5 0 0,1 8,-7.5  H 145.56666946411133  H 145.56666946411133  M 146.06666946411133,5  m -5,14.3  l 3.68,-2.1  M 36.33333396911621,49  m 1.9895923599143455,-1.9895923599143455 a 8.5 8.5 0 0,0 6.0104076400856545,2.4895923599143455  l 101.23333549499512,0  H 145.56666946411133  M 0,59  m 2.6966991411008934,-2.6966991411008934 a 7.5 7.5 0 0,1 -2.1966991411008934,-5.303300858899107  V 8 
+"></path>
+  <g class="blocklyEditableText" style="cursor: default;" transform="translate(5,5)">
+    <rect rx="4" ry="4" x="0" y="0" height="16" width="51.16666793823242" class="blocklyFieldRect blocklyDropdownRect" stroke="#ff66d8" fill="transparent"></rect>
+    <text class="blocklyText blocklyDropdownText" text-anchor="start" x="5" y="12.5">item <tspan style="fill: rgb(255, 37, 199);"> ▾</tspan>
+    </text>
+    <image style="display: none;"></image>
+  </g>
+  <g transform="translate(61.16666793823242,5)">
+    <text class="blocklyText" x="0" y="12">is equal to</text>
+  </g>
+  <g transform="translate(10,30)">
+    <text class="blocklyText" x="0" y="12">do</text>
+  </g>
+</svg>

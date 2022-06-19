@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22.04" height="25.597" viewBox="0 0 22.04 25.597">
+  <g id="Group_10" data-name="Group 10" transform="translate(904.028 -98.685)">
+    <g id="notifications-outline_1_" data-name="notifications-outline (1)" transform="translate(-903 99.685)">
+      <path id="Path_200" data-name="Path 200" d="M99.57,65.212c-1.457-1.783-2.485-2.69-2.485-7.606,0-4.5-2.3-6.1-4.19-6.883a1.01,1.01,0,0,1-.564-.6,2.53,2.53,0,0,0-4.995,0,1,1,0,0,1-.564.6c-1.894.78-4.19,2.378-4.19,6.883,0,4.915-1.031,5.823-2.488,7.606a1.144,1.144,0,0,0,.981,1.847H98.595A1.144,1.144,0,0,0,99.57,65.212Z" transform="translate(-79.839 -48)" fill="none" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_201" data-name="Path 201" d="M199.261,384v.908a3.63,3.63,0,1,1-7.261,0V384" transform="translate(-185.638 -364.941)" fill="none" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </g>
+  </g>
+</svg>
