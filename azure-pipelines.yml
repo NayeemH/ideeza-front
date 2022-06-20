@@ -6,7 +6,8 @@
 trigger:
 - master
 
-pool: nayeem
+pool:
+  name: nayeem
 
 steps:
 - script: echo Hello, world!
